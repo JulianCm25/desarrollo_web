@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-contacto.css">
+    <title>Contacto</title>
+    <script language="JavaScript">
+      function mueveReloj(){
+          momentoActual = new Date()
+          hora = momentoActual.getHours()
+          minuto = momentoActual.getMinutes()
+          segundo = momentoActual.getSeconds()
+      
+          horaImprimible = hora + " : " + minuto + " : " + segundo
+      
+          document.form_reloj.reloj.value = horaImprimible
+      
+          setTimeout("mueveReloj()",1000)}
+      </script>
+</head>
+<body 
+onload="mueveReloj()">
+  La hora actual es:
+  
+  <form name="form_reloj">
+  <input type="text" name="reloj" size="10">
+  </form>
+  
+<body>
+   
+
+    </style>
+      <section>   
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Elaboracion.html">Elaboracion</a></li>
+        <li><a href="Catalogo.html">Catalogo</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </section>
+ <div class="header">
+        <h2>Contacto de interes  </h2>
+      </div>
+      <div class="row">
+         <div class="col-xs-10 col-sm-6 col-md-4"></div>
+          <div class="rightcolumn">
+          <div class="card">
+            <p id="demo">Si estas interesad@ en adquirir uno de los productos .</p>
+
+             <button type="button" onclick='document.getElementById("demo").innerHTML = "Puedes hacerlo comunicandote a cualquiera de los siguientes  contactos"'>Continua leyendo </button>
+
+            </div>
+            <div class="card " style="color: white">
+              <ul>
+                <li style="float: left;">WhatsApp: +57 3058867961 <img src="../img/whatsapp.png"alt="" width="30%" class="icon"> </li>
+                <a href="https://api.whatsapp.com/send?phone=3058867961&text=Para%20cotizar%20la%20elaboracion%20de%20tu%20producto%20mas%20informacion"title="WhatsApp">Ir a whatsapp</a>
+              </ul>
+              <ul>
+                <li style="float: left;">Contacto: 3045236857 <img src="../img/phone.png"alt="" width="30%" class="icon"></li>
+                <a href="tel: +57 3045236857"title="Telefono">Ir a llamada</a>
+              </ul>
+              <ul>
+                <li style="float: left;">instagram: 3diamonds._ <img src="../img/instagram.png"  alt="" width="30%" class="icon"></li>
+                <a href="https://instagram.com/3diamonds._?igshid=YmMyMTA2M2Y="title="instagram">Ir a instagram</a>
+              </ul>
+            </div>
+        </div>
+
+        <div class="rightcolumn"> 
+          <div class="card2">
+            <h2> Ilustracion</h2>
+            <div class="fakeimg"><source src="../videos/1.impresora video.mp4"type="video/mp4"</div>
+               <video style="float:left; max-width: 100%;"" controls>
+                <source src="../videos/1.impresora video.mp4" type="video/mp4">
+                <source src="../videos/1.impresora video.ogv" type="video/ogg">
+                Your browser does not support HTML video.
+               </video>
+            </div>
+          </div>
+        </div>
+        <div class="rightcolumn"> 
+          <div class="card3">
+            <h2> Ilustracion</h2>
+            <div class="fakeimg"><source src="../videos/2.impresora video .mp4"type="video/mp4"</div>
+               <video style="float:left; max-width: 100%;"" controls>
+                <source src="../videos/2.impresora video .mp4" type="video/mp4">
+                <source src="../videos/2.impresora video .mp4" type="video/ogg">
+                Your browser does not support HTML video.
+               </video>
+            </div>
+          </div>
+        </div>
+     </div>
+</body>
+</html>
